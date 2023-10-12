@@ -1,0 +1,21 @@
+/* #region common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* #endregion common */
+
+/* #region utility */
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    padding: 2rem 0;
+}
+/* #endregion utility */
