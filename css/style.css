@@ -6,6 +6,29 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
+:root{
+    --ex-bg: #F5F5F5;
+    --ex-border: #E3E3E3;
+    --ex-danger: red;
+}
+
+h1{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h2{
+    padding: 1rem 0;
+}
+
+p{
+    padding: 1rem 0;
+}
+
+section{
+    margin-bottom: 1rem;
+}
 /* #endregion common */
 
 /* #region utility */
@@ -14,8 +37,29 @@
     margin: auto;
 }
 
-h1{
-    text-align: center;
-    padding: 2rem 0;
+.w50{
+    width: 50px;
+}
+
+.w100{
+    width: 100px;
 }
 /* #endregion utility */
+
+/* #region main */
+.ex-container{
+    background: var(--ex-bg);
+    border: 1px solid var(--ex-border);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.square{
+    aspect-ratio: 1;
+    border: 1px solid var(--ex-danger);
+}
+
+.bg-red{
+    background: var(--ex-danger);
+}
+/* #endregion main */
