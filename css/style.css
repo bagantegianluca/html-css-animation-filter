@@ -179,16 +179,16 @@ section:nth-of-type(11) i:hover{
 [class^="top-border"]{
     position: absolute;
     top: 0;
-    left: 50px;
-    transform: translate(-50%, -50%);
+    left: 20px;
+    transform: translate(0, -50%);
     transition: all 2s;
 }
 
 [class^="bottom-border"]{
     position: absolute;
     bottom: 0;
-    right: 50px;
-    transform: translate(50%, 50%);
+    right: 20px;
+    transform: translate(0, 50%);
     transition: all 2s;
 }
 section:nth-of-type(12) button:hover, section:nth-of-type(13) button:hover{
@@ -201,15 +201,15 @@ section:nth-of-type(12) button:hover .top-border-break{
 
 @keyframes top-border-moving {
     0%{
-        left: 50px;
+        left: 20px;
     }
 
     50%{
-        right: 0;
+        left: calc(100% - 3rem);
     }
 
     100%{
-        left: 50px;
+        left: 20px;
     }
 }
 
@@ -219,15 +219,87 @@ section:nth-of-type(12) button:hover .bottom-border-break{
 
 @keyframes bottom-border-moving {
     0%{
-        right: 50px;
+        right: 20px;
     }
 
     50%{
-        left: 0;
+        right: calc(100% - 3rem);
     }
 
     100%{
-        right: 50px;
+        right: 20px;
+    }
+}
+
+section:nth-of-type(13) button:hover .top-border-break{
+    animation: top-border-moving-complete 2s linear;
+}
+
+@keyframes top-border-moving-complete {
+    0%{
+        top: 0;
+        left: 20px;
+    }
+
+    30%{
+        top: 0;
+        left: calc(100% - 2.5rem);
+    }
+
+    45%{
+        top: calc(100%);
+        left: calc(100% - 2.5rem);
+    }
+
+    70%{
+        top: calc(100%);
+        left: -15px;
+    }
+
+    90%{
+        top: 0;
+        left: -15px;
+    }
+
+    100%{
+        top: 0;
+        left: 20px;
+    }
+}
+
+section:nth-of-type(13) button:hover .bottom-border-break{
+    animation: bottom-border-moving-complete 2s linear;
+}
+
+@keyframes bottom-border-moving-complete {
+    0%{
+        bottom: 0;
+        right: 20px;
+    }
+
+    30%{
+        bottom: 0;
+        right: calc(100% - 2.5rem);
+    }
+
+    45%{
+        bottom: calc(100%);
+        right: calc(100% - 2.5rem);
+    }
+
+    70%{
+        bottom: calc(100%);
+        right: -15px;
+    }
+
+    90%{
+        bottom: 0;
+        right: -15px;
+    }
+
+    100%{
+        bottom: 0;
+        right: 20px;
     }
 }
 
