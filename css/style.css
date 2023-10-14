@@ -232,7 +232,7 @@ section:nth-of-type(12) button:hover .bottom-border-break{
 }
 
 section:nth-of-type(13) button:hover .top-border-break{
-    animation: top-border-moving-complete 2s linear;
+    animation: top-border-moving-complete 2s linear infinite;
 }
 
 @keyframes top-border-moving-complete {
@@ -268,7 +268,7 @@ section:nth-of-type(13) button:hover .top-border-break{
 }
 
 section:nth-of-type(13) button:hover .bottom-border-break{
-    animation: bottom-border-moving-complete 2s linear;
+    animation: bottom-border-moving-complete 2s linear infinite;
 }
 
 @keyframes bottom-border-moving-complete {
