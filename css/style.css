@@ -180,7 +180,7 @@ section:nth-of-type(11) i:hover{
     position: absolute;
     top: 0;
     left: 50px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: all 2s;
 }
 
@@ -188,7 +188,7 @@ section:nth-of-type(11) i:hover{
     position: absolute;
     bottom: 0;
     right: 50px;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
     transition: all 2s;
 }
 section:nth-of-type(12) button:hover, section:nth-of-type(13) button:hover{
@@ -202,17 +202,14 @@ section:nth-of-type(12) button:hover .top-border-break{
 @keyframes top-border-moving {
     0%{
         left: 50px;
-        transform: translate(-50%,-50%);
     }
 
     50%{
         right: 0;
-        transform: translate(50%,-50%);
     }
 
     100%{
         left: 50px;
-        transform: translate(-50%,-50%);
     }
 }
 
@@ -223,17 +220,14 @@ section:nth-of-type(12) button:hover .bottom-border-break{
 @keyframes bottom-border-moving {
     0%{
         right: 50px;
-        transform: translate(50%,50%);
     }
 
     50%{
         left: 0;
-        transform: translate(-50%,50%);
     }
 
     100%{
         right: 50px;
-        transform: translate(50%,50%);
     }
 }
 
